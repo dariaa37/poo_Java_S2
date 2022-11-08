@@ -1,6 +1,8 @@
 public class LibroCalificaciones {
     // Variable declaration
     private String nombreDelCurso; // private acces
+    int promedioIndividual = 0;
+    int promedioGrupal;
 
         public void establecerNombreDelCurso(String nombre){
             nombreDelCurso = nombre;    // keep course's name
@@ -14,6 +16,6 @@ public class LibroCalificaciones {
         // Shows welcome to user
         public void mostrarMensaje(){
             // Call to got "obtenerNombreDelCurso" that represents the course's name from LibroCalificaciones
-            System.out.print("Bienvenido al libro de calificaciones para: " + obtenerNombreDelCurso());
+            System.out.print("Bienvenido al libro de calificaciones para:\n" + obtenerNombreDelCurso());
         }
 }
